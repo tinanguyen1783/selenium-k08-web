@@ -7,4 +7,8 @@ public interface Urls {
     String iframeSlug = "/iframe";
     String hoverSlug = "/hovers";
     String floatingSlug = "/floating_menu";
+
+    String loginSlug = "/login";
+
+    String dynamicControlSlug = "/dynamic_controls";
 }
