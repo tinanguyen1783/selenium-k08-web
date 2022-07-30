@@ -3,7 +3,7 @@ package models.components;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-@ComponentCssSelector(value = "#login")
+@ComponentCssSelector(value = "#loginTELE")
 public class LoginFormComponent {
 
     private final WebDriver driver;
@@ -16,6 +16,11 @@ public class LoginFormComponent {
     private final static By loginBtnSel = By.cssSelector("[type='submit']");
 
 
+
+    public void setAnotation(int a){
+
+        System.out.println("Set anotation");
+    }
     public void setUsername(String username) {
 
         driver.findElement(usernameSel).sendKeys(username);

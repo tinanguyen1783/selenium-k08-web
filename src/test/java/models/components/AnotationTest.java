@@ -6,8 +6,17 @@ public class AnotationTest {
 
 
         try{
-            String cssSelector = component.getAnnotation(ComponentCssSelector.class).value();
-            System.out.println(cssSelector);
+
+           /* Class[] aarg = new Class[1];
+            aarg[0] = Integer.class;*/
+           // Method method = component.getMethod("setAnotation",aarg);
+
+            //System.out.println(method.getAnnotation(ComponentCssSelector.class).value());
+
+
+            // String cssSelector = component.getAnnotation(ComponentCssSelector.class).value();
+            //System.out.println(component.getAnnotation(ComponentCssSelector.class));
+         //   System.out.println(cssSelector);
 
         }catch (Exception e){
             e.printStackTrace();
