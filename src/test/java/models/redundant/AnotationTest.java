@@ -1,4 +1,6 @@
-package models.components;
+package models.redundant;
+
+import models.components.ComponentCssSelector;
 
 public class AnotationTest {
 
@@ -14,9 +16,9 @@ public class AnotationTest {
             //System.out.println(method.getAnnotation(ComponentCssSelector.class).value());
 
 
-            // String cssSelector = component.getAnnotation(ComponentCssSelector.class).value();
-            //System.out.println(component.getAnnotation(ComponentCssSelector.class));
-         //   System.out.println(cssSelector);
+             String cssSelector = component.getAnnotation(ComponentCssSelector.class).value();
+            System.out.println(component.getAnnotation(ComponentCssSelector.class));
+            System.out.println(cssSelector);
 
         }catch (Exception e){
             e.printStackTrace();

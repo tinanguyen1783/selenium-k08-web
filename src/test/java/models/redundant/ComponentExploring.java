@@ -1,4 +1,4 @@
-package models.components;
+package models.redundant;
 
 import java.lang.reflect.Constructor;
 

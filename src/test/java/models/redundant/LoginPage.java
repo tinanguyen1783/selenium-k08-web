@@ -1,4 +1,4 @@
-package models.components;
+package models.redundant;
 
 public abstract class LoginPage {
 

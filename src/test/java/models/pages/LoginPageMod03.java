@@ -1,6 +1,6 @@
 package models.pages;
 
-import models.components.LoginFormComponent;
+import models.redundant.LoginFormComponent;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPageMod03 {

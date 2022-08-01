@@ -1,9 +1,10 @@
-package models.components;
+package models.redundant;
 
+import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-@ComponentCssSelector(value = "#loginTELE")
+@ComponentCssSelector(value = "#login")
 public class LoginFormComponent {
 
     private final WebDriver driver;
