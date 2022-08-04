@@ -41,16 +41,10 @@ public class Component {
 
     public <T extends Component> List<T> findComponents(Class<T> componentClass, WebDriver driver) {
 // get component selector
-        String cssSelector;
-        try {
 
-            cssSelector = componentClass.getAnnotation(ComponentCssSelector.class).value();
-        } catch (Exception e) {
-            throw new IllegalArgumentException("#Err The componentClass must have a css selector.");
-        }
 
-        this.webDriverWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(cssSelector)));
-        List<WebElement> webElementList = this.component.findElements(By.cssSelector(cssSelector));
+        this.webDriverWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getCompSelector(componentClass)));
+        List<WebElement> webElementList = this.component.findElements(getCompSelector(componentClass));
 
         // Define component class constructor
         Class<?>[] params = new Class[]{WebDriver.class, WebElement.class};
@@ -81,5 +75,20 @@ public class Component {
         }).collect(Collectors.toList());
 
         return componennts;
+    }
+    public By getCompSelector(Class<? extends Component> componentClass){
+
+        if(componentClass.isAnnotationPresent(ComponentCssSelector.class))
+            return By.cssSelector(componentClass.getAnnotation(ComponentCssSelector.class).value());
+        else if (componentClass.isAnnotationPresent(ComponentIdSelector.class)) {
+            return By.id(componentClass.getAnnotation(ComponentIdSelector.class).value());
+
+        } else if (componentClass.isAnnotationPresent(ComponentXpathSelector.class)) {
+
+            return By.xpath(componentClass.getAnnotation(ComponentXpathSelector.class).value());
+
+        }
+        else throw new IllegalArgumentException("Component class" + componentClass + " must have " + ComponentXpathSelector.class.getSimpleName() + "or" + ComponentIdSelector.class.getSimpleName() + "or" + ComponentCssSelector.class.getSimpleName());
+
     }
 }

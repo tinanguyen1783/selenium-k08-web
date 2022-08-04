@@ -1,4 +1,4 @@
-package models.components.footer;
+package models.components.global.footer;
 
 import models.components.Component;
 import models.components.ComponentCssSelector;

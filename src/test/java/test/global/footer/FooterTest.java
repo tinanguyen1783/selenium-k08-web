@@ -1,9 +1,9 @@
 package test.global.footer;
 
 import driver.DriverFactory;
-import models.components.footer.CustomerServiceColumnComponent;
-import models.components.footer.FooterColumnComponent;
-import models.components.footer.InformationColumnComponent;
+import models.components.global.footer.CustomerServiceColumnComponent;
+import models.components.global.footer.FooterColumnComponent;
+import models.components.global.footer.InformationColumnComponent;
 import models.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import url.Urls;
