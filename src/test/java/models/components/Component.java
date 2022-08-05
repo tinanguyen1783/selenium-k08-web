@@ -76,9 +76,10 @@ public class Component {
 
         return componennts;
     }
-    public By getCompSelector(Class<? extends Component> componentClass){
 
-        if(componentClass.isAnnotationPresent(ComponentCssSelector.class))
+    public By getCompSelector(Class<? extends Component> componentClass) {
+
+        if (componentClass.isAnnotationPresent(ComponentCssSelector.class))
             return By.cssSelector(componentClass.getAnnotation(ComponentCssSelector.class).value());
         else if (componentClass.isAnnotationPresent(ComponentIdSelector.class)) {
             return By.id(componentClass.getAnnotation(ComponentIdSelector.class).value());
@@ -87,8 +88,8 @@ public class Component {
 
             return By.xpath(componentClass.getAnnotation(ComponentXpathSelector.class).value());
 
-        }
-        else throw new IllegalArgumentException("Component class" + componentClass + " must have " + ComponentXpathSelector.class.getSimpleName() + "or" + ComponentIdSelector.class.getSimpleName() + "or" + ComponentCssSelector.class.getSimpleName());
+        } else
+            throw new IllegalArgumentException("Component class" + componentClass + " must have " + ComponentXpathSelector.class.getSimpleName() + "or" + ComponentIdSelector.class.getSimpleName() + "or" + ComponentCssSelector.class.getSimpleName());
 
     }
 }

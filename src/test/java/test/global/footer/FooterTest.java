@@ -6,51 +6,70 @@ import models.components.global.footer.FooterColumnComponent;
 import models.components.global.footer.InformationColumnComponent;
 import models.pages.HomePage;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import url.Urls;
 
 public class FooterTest {
 
-    public static void main(String[] args) {
 
-        WebDriver driverFactory = DriverFactory.getChromeDriver();
+    // @Test(priority = 1, dependsOnMethods = {"testFooterCategoryPage"})
+    public void testFooterHomePage() {
 
-
-        testFooterHomePage(driverFactory);
-       /* testFooterCategoryPage(driverFactory);
-        testFooterRegisterPage(driverFactory);
-        testFooterLoginPage(driverFactory);
-*/
-        driverFactory.quit();
-    }
-
-    private static void testFooterHomePage(WebDriver driver) {
+        WebDriver driver = DriverFactory.getChromeDriver();
         driver.get(Urls.homePageUrl);
-        HomePage homePage = new HomePage(driver);
-        InformationColumnComponent informationColumnComponent = homePage.getFooterComponent().getInformationColumn();
-        testFooterColunm(informationColumnComponent);
+        try {
 
-        CustomerServiceColumnComponent customerServiceColumnComponent = homePage.getFooterComponent().getCustomerServiceColumn();
+            HomePage homePage = new HomePage(driver);
+            InformationColumnComponent informationColumnComponent = homePage.getFooterComponent().getInformationColumn();
+            testFooterColumn(informationColumnComponent);
 
-       testFooterColunm(customerServiceColumnComponent);
+            CustomerServiceColumnComponent customerServiceColumnComponent = homePage.getFooterComponent().getCustomerServiceColumn();
+
+            testFooterColumn(customerServiceColumnComponent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        driver.quit();
+    }
+
+    @Test(priority = 3)
+    private static void testFooterCategoryPage() {
+        String actualResult = "a", expectedResult = "b";
+        // Verifier.verifyEquals(actualResult,expectedResult);
+        // Hart assertion.
+
+        Assert.assertEquals(actualResult, expectedResult, "[ERR] Welcome message is incorrect jjjj");
+        System.out.println("Hello");
+        Assert.assertTrue(actualResult.equals(expectedResult), "....incorrect");
+        Assert.fail();
+        Assert.fail("...fail");
 
     }
 
+    @Test(priority = 2)
+    private static void testFooterRegisterPage() {
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(1,2);
+        softAssert.assertEquals(true,true);
+        softAssert.assertEquals(2,4);
 
-    private static void testFooterCategoryPage(WebDriver driver) {
+        softAssert.assertAll();
+
+        System.out.println("hello");
     }
 
-    private static void testFooterRegisterPage(WebDriver driver) {
+    @Test(priority = 4)
+    private static void testFooterLoginPage() {
     }
 
-    private static void testFooterLoginPage(WebDriver driver) {
-    }
-
-    public static void testFooterColunm(FooterColumnComponent footerColumnComponent){
+    public static void testFooterColumn(FooterColumnComponent footerColumnComponent) {
 
 
         System.out.println(footerColumnComponent.getHeaderElem().getText());
 
-        footerColumnComponent.getLinksElem().forEach(links ->{
+        footerColumnComponent.getLinksElem().forEach(links -> {
 
             System.out.println(links.getText());
             System.out.println(links.getAttribute("href"));

@@ -2,6 +2,7 @@ package models.pages;
 
 import models.components.Component;
 import models.components.global.footer.FooterComponent;
+import models.components.products.ProductGridComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -18,5 +19,11 @@ public class BasePage extends Component {
     public FooterComponent getFooterComponent() {
 
         return findComponent(FooterComponent.class, driver);
+
+    }
+
+    public ProductGridComponent getProductGridComponent(){
+
+        return  findComponent(ProductGridComponent.class, driver);
     }
 }
