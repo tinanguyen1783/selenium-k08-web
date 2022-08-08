@@ -18,6 +18,10 @@ public class Component {
     protected WebElement component;
     protected WebDriverWait webDriverWait;
 
+    public WebElement getComponent() {
+        return component;
+    }
+
     public Component(WebDriver driver, WebElement webElement) {
         this.driver = driver;
         this.component = webElement;
@@ -60,7 +64,7 @@ public class Component {
         }
 
 
-        // convert all webelement -> conponent
+        // convert all web element -> component
         List<T> componennts = webElementList.stream().map(webElement -> {
 
             try {

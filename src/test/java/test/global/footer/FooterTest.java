@@ -1,42 +1,30 @@
 package test.global.footer;
 
 import driver.DriverFactory;
-import models.components.global.footer.CustomerServiceColumnComponent;
-import models.components.global.footer.FooterColumnComponent;
-import models.components.global.footer.InformationColumnComponent;
-import models.pages.HomePage;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+import test_flows.global.FooterTestFlow;
 import url.Urls;
 
 public class FooterTest {
 
 
     // @Test(priority = 1, dependsOnMethods = {"testFooterCategoryPage"})
-    public void testFooterHomePage() {
-
+    public void testFooterHomePage() {}
+    public void test1() {
+    }
+@Test
+    private static void testFooterCategoryPage() {
         WebDriver driver = DriverFactory.getChromeDriver();
-        driver.get(Urls.homePageUrl);
         try {
-
-            HomePage homePage = new HomePage(driver);
-            InformationColumnComponent informationColumnComponent = homePage.getFooterComponent().getInformationColumn();
-            testFooterColumn(informationColumnComponent);
-
-            CustomerServiceColumnComponent customerServiceColumnComponent = homePage.getFooterComponent().getCustomerServiceColumn();
-
-            testFooterColumn(customerServiceColumnComponent);
+            driver.get(Urls.homePageUrl);
+            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+            footerTestFlow.verifyProductCatFooterComponent();
         } catch (Exception e) {
             e.printStackTrace();
         }
         driver.quit();
-    }
-
-    @Test(priority = 3)
-    private static void testFooterCategoryPage() {
-        String actualResult = "a", expectedResult = "b";
+       /* String actualResult = "a", expectedResult = "b";
         // Verifier.verifyEquals(actualResult,expectedResult);
         // Hart assertion.
 
@@ -45,36 +33,11 @@ public class FooterTest {
         Assert.assertTrue(actualResult.equals(expectedResult), "....incorrect");
         Assert.fail();
         Assert.fail("...fail");
-
+*/
     }
-
-    @Test(priority = 2)
-    private static void testFooterRegisterPage() {
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(1,2);
-        softAssert.assertEquals(true,true);
-        softAssert.assertEquals(2,4);
-
-        softAssert.assertAll();
-
-        System.out.println("hello");
-    }
-
-    @Test(priority = 4)
+    private static void testFooterRegisterPage() {  }
     private static void testFooterLoginPage() {
     }
 
-    public static void testFooterColumn(FooterColumnComponent footerColumnComponent) {
 
-
-        System.out.println(footerColumnComponent.getHeaderElem().getText());
-
-        footerColumnComponent.getLinksElem().forEach(links -> {
-
-            System.out.println(links.getText());
-            System.out.println(links.getAttribute("href"));
-
-        });
-
-    }
 }
