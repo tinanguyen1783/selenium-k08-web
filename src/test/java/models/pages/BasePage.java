@@ -18,6 +18,7 @@ public class BasePage extends Component {
 
     }
 
+    public TopMenu
     public TopMenuComponent getTopMenuComponent() {
 
         return findComponent(TopMenuComponent.class, driver);
