@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test" verbose="1" >
+    <test name="Global UI1" >
+        <classes>
+            <class name="test.testng.TestNGHook01" />
+            <class name="test.testng.TestNGHook02" />
+
+        </classes>
+    </test>
+    <test name="Global UI2" >
+        <classes>
+            <class name="test.testng.TestNGHook03" />
+            <class name="test.testng.TestNGHook04" />
+
+        </classes>
+    </test>
+
+
+</suite>

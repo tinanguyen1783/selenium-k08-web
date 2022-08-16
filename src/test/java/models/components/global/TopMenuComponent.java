@@ -31,20 +31,20 @@ public class TopMenuComponent extends Component {
         public  WebElement getCatItemLinkElem(){
             return component.findElement(By.tagName("a"));
         }
-        public List<CatItemsComponent> getCatItemsComponent(){
+        public List<SublistComponent> getSubListComponent(){
 
             Actions actions = new Actions(driver);
             actions.moveToElement(component).perform();
-            return findComponents(CatItemsComponent.class, driver);
+            return findComponents(SublistComponent.class, driver);
         }
      }
 
 
     @ComponentCssSelector(".sublist li a")
-    public static class CatItemsComponent extends Component{
+    public static class SublistComponent extends Component{
 
 
-        public CatItemsComponent(WebDriver driver, WebElement webElement) {
+        public SublistComponent(WebDriver driver, WebElement webElement) {
             super(driver, webElement);
         }
     }
