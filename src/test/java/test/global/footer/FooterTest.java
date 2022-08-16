@@ -16,11 +16,13 @@ public class FooterTest {
 @Test
     private static void testFooterCategoryPage() {
         WebDriver driver = DriverFactory.getChromeDriver();
+        try {
             driver.get(Urls.homePageUrl);
             FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
             footerTestFlow.verifyProductCatFooterComponent();
-
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         driver.quit();
        /* String actualResult = "a", expectedResult = "b";
         // Verifier.verifyEquals(actualResult,expectedResult);
@@ -33,9 +35,9 @@ public class FooterTest {
         Assert.fail("...fail");
 */
     }
-    //private static void testFooterRegisterPage() {  }
-   // private static void testFooterLoginPage() {
-   // }
+    private static void testFooterRegisterPage() {  }
+    private static void testFooterLoginPage() {
+    }
 
 
 }

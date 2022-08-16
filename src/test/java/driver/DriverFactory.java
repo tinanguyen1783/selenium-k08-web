@@ -16,7 +16,7 @@ public class DriverFactory {
         if (OS.isFamilyWindows())
             chromeDriverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
         if (OS.isFamilyMac())
-            chromeDriverLocation = System.getProperty("user.dir") + "src/test/resources/drivers/chromedriver";
+            chromeDriverLocation = System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver";
         if (chromeDriverLocation.isEmpty()) throw new IllegalArgumentException("Cannot detect OS type");
 
         System.setProperty("webdriver.chrome.driver", chromeDriverLocation);

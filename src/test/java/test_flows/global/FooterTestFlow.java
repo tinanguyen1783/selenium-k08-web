@@ -1,7 +1,7 @@
 package test_flows.global;
 
 import models.components.global.TopMenuComponent;
-import models.components.global.TopMenuComponent.subListComponent;
+import models.components.global.TopMenuComponent.CatItemsComponent;
 import models.components.global.TopMenuComponent.MainCatItems;
 import models.components.global.footer.FooterColumnComponent;
 import models.components.global.footer.FooterComponent;
@@ -62,7 +62,7 @@ public class FooterTestFlow {
     }
 
     public void verifyProductCatFooterComponent(){
-
+// Random pickup an item
         BasePage basePage = new BasePage(driver);
         TopMenuComponent topMenuComponent = basePage.getTopMenuComponent();
         List<TopMenuComponent.MainCatItems> mainCatItems = topMenuComponent.getMainCatItemsElem();
@@ -70,11 +70,13 @@ public class FooterTestFlow {
 
         MainCatItems randomMainCatItems = mainCatItems.get(new SecureRandom().nextInt(mainCatItems.size()-1));
         String randomCatHref = randomMainCatItems.getCatItemLinkElem().getAttribute("href");
-        List<subListComponent> subListComponents = randomMainCatItems.getSubListComponent();
-        System.out.println("Links ne"+  subListComponents.size());
-        if(subListComponents.isEmpty())  randomMainCatItems.getCatItemLinkElem().click();
+
+        // Get sublist
+        List<CatItemsComponent> catItemsComponents = randomMainCatItems.getCatItemsComponent();
+        System.out.println("Links ne"+  catItemsComponents.size());
+        if(catItemsComponents.isEmpty())  randomMainCatItems.getCatItemLinkElem().click();
         else {
-            subListComponent randomCatItemComponent = subListComponents.get(new SecureRandom().nextInt(subListComponents.size() - 1));
+            CatItemsComponent randomCatItemComponent = catItemsComponents.get(new SecureRandom().nextInt(catItemsComponents.size() - 1));
             randomCatHref = randomCatItemComponent.getComponent().getAttribute("Href");
            randomCatItemComponent.getComponent().click();
 
