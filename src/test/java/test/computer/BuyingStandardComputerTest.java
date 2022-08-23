@@ -13,7 +13,7 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
 
     public void testStandardComputerBuying(){
 
-        driver.get(desktopsUrl.concat("/build-your-own-computer"));
+        driver.get(homePageUrl.concat("/build-your-own-computer"));
 
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow = new OrderComputerFlow<>(driver, StandardComputerComponent.class);
         orderComputerFlow.buildCompSpecAndAddToCart();

@@ -19,7 +19,10 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
 
         ComputerItemDetailsPage computerItemDetailsPage = new ComputerItemDetailsPage(driver);
         T computerEssentialComp = computerItemDetailsPage.getComputerComp(computerEssentialComponent);
-        computerEssentialComp.selectProcessorType("2.5GHz");
-        computerEssentialComp.selectRamType("2GB");
+        computerEssentialComp.selectProcessorType("Fast");
+        computerEssentialComp.selectRamType("4 GB");
+        try{
+            Thread.sleep(5000);
+        }catch(Exception e){}
     }
 }

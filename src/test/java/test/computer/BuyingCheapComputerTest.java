@@ -12,7 +12,7 @@ public class BuyingCheapComputerTest extends BaseTest implements Urls {
 
     public void testCheapComputerBuying(){
 
-        driver.get(desktopsUrl.concat("/build-your-cheap-own-computer"));
+        driver.get(homePageUrl.concat("/build-your-cheap-own-computer"));
 
         OrderComputerFlow<CheapComputerComponent> orderComputerFlow = new OrderComputerFlow<>(driver, CheapComputerComponent.class);
         orderComputerFlow.buildCompSpecAndAddToCart();

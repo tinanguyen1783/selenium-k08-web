@@ -29,7 +29,7 @@ public abstract class ComputerEssentialComponent extends Component {
             optionElem.click();
             return optionElem.getText();
         } else {
-            throw new RuntimeException("The option" + type + "is not existing to select!")
+            throw new RuntimeException("The option" + type + "is not existing to select!");
         }
     }
 }

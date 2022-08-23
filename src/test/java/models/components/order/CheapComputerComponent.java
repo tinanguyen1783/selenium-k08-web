@@ -11,11 +11,11 @@ public class CheapComputerComponent extends ComputerEssentialComponent{
 
     @Override
     public String selectProcessorType(String type) {
-        return null;
+        return selectCompOption(type);
     }
 
     @Override
     public String selectRamType(String type) {
-        return null;
+        return selectCompOption(type);
     }
 }
