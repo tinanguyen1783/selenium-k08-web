@@ -2,20 +2,34 @@ package test.computer;
 
 import models.components.order.CheapComputerComponent;
 import models.components.order.StandardComputerComponent;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.BaseTest;
+import test_data.DataObjectBuilder;
+import test_data.computer.ComputerData;
 import test_flows.computer.OrderComputerFlow;
 import url.Urls;
 
 public class BuyingStandardComputerTest extends BaseTest implements Urls {
 
-    @Test
+    @Test(dataProvider = "computerData")
 
-    public void testStandardComputerBuying(){
+    public void testStandardComputerBuying(ComputerData computerData){
 
         driver.get(homePageUrl.concat("/build-your-own-computer"));
 
-        OrderComputerFlow<StandardComputerComponent> orderComputerFlow = new OrderComputerFlow<>(driver, StandardComputerComponent.class);
-        orderComputerFlow.buildCompSpecAndAddToCart();
+        OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
+                new OrderComputerFlow<>(driver, StandardComputerComponent.class,computerData);
+        try {
+            orderComputerFlow.buildCompSpecAndAddToCart();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @DataProvider
+    public ComputerData[] computerData() {
+
+        String path = "/src/test/java/test_data/computer/StandardComputerDataList.json";
+        return DataObjectBuilder.buildDataObjectFrom(path, ComputerData[].class);
     }
 }

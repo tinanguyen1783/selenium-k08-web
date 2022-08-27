@@ -15,6 +15,16 @@ public abstract class ComputerEssentialComponent extends Component {
 
     public abstract String selectRamType(String type);
 
+    public String selectHDD(String type){
+
+        return selectCompOption(type);
+    }
+
+    public String selectOs(String type){
+
+        return selectCompOption(type);
+    }
+
     protected String selectCompOption(String type) {
 
         String selectorStr = "//label[contains(text(),\"" + type + "\")]";

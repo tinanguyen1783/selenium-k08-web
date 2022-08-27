@@ -10,7 +10,7 @@ import java.util.List;
 
 @ComponentCssSelector(".product-essential")
 public class StandardComputerComponent extends ComputerEssentialComponent {
-    private static final By productAttibuteSel = By.cssSelector("Select[id^=\"product_attribute\"]");
+    private static final By productAttributeSel = By.cssSelector("Select[id^=\"product_attribute\"]");
 
     public StandardComputerComponent(WebDriver driver, WebElement webElement) {
         super(driver, webElement);
@@ -20,14 +20,14 @@ public class StandardComputerComponent extends ComputerEssentialComponent {
     public String selectProcessorType(String type) {
 
         final int PROCESSOR_DROPDOWN_INDEX = 0;
-        WebElement processorDropdownElem = component.findElements(productAttibuteSel).get(PROCESSOR_DROPDOWN_INDEX);
+        WebElement processorDropdownElem = component.findElements(productAttributeSel).get(PROCESSOR_DROPDOWN_INDEX);
         return selectOption(processorDropdownElem, type);
     }
 
     @Override
     public String selectRamType(String type) {
         final int RAM_DROPDOWN_INDEX = 1;
-        WebElement ramDropdownElem = component.findElements(productAttibuteSel).get(RAM_DROPDOWN_INDEX);
+        WebElement ramDropdownElem = component.findElements(productAttributeSel).get(RAM_DROPDOWN_INDEX);
         return selectOption(ramDropdownElem, type);
     }
 
