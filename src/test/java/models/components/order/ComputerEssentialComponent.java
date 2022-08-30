@@ -5,8 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public abstract class ComputerEssentialComponent extends Component {
+import java.util.List;
 
+public abstract class ComputerEssentialComponent extends BaseItemDetailsComponent {
+
+    private final static By allOptionsSel = By.cssSelector(".option-list input");
     public ComputerEssentialComponent(WebDriver driver, WebElement webElement) {
         super(driver, webElement);
     }
@@ -15,6 +18,13 @@ public abstract class ComputerEssentialComponent extends Component {
 
     public abstract String selectRamType(String type);
 
+    public void unselectDefaultOption(){
+
+        List<WebElement> allOptionsElem = component.findElements(allOptionsSel);
+        allOptionsElem.forEach(option ->{
+            if(option.getAttribute("checked") !=null) option.click();
+        });
+    }
     public String selectHDD(String type){
 
         return selectCompOption(type);
@@ -24,6 +34,11 @@ public abstract class ComputerEssentialComponent extends Component {
 
         return selectCompOption(type);
     }
+    public String selectSoftware(String type){
+
+        return selectCompOption(type);
+    }
+
 
     protected String selectCompOption(String type) {
 

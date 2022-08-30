@@ -14,17 +14,16 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
 
     @Test(dataProvider = "computerData")
 
-    public void testStandardComputerBuying(ComputerData computerData){
+    public void testStandardComputerBuying(ComputerData computerData) throws InterruptedException {
 
         driver.get(homePageUrl.concat("/build-your-own-computer"));
 
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
                 new OrderComputerFlow<>(driver, StandardComputerComponent.class,computerData);
-        try {
+
             orderComputerFlow.buildCompSpecAndAddToCart();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+            orderComputerFlow.verifyShoppingCartPage();
+
     }
     @DataProvider
     public ComputerData[] computerData() {

@@ -22,6 +22,8 @@ public class BuyingCheapComputerTest extends BaseTest implements Urls {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
+        orderComputerFlow.verifyShoppingCartPage();
     }
 
     @DataProvider
