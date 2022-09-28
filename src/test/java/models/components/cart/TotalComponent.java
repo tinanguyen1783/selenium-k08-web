@@ -21,6 +21,9 @@ public class TotalComponent extends Component {
     private static final By priceTypeSel = By.cssSelector(".cart-total-left");
     private static final By priceValueSel = By.cssSelector(".cart-total-right");
 
+    private static final By tosSel = By.cssSelector("#termsofservice");
+    private static final By checkoutBtnSel = By.cssSelector("#checkout");
+
     public Map<String,Double> priceCategories(){
 
         Map<String,Double> priceCategories = new HashMap<>();
@@ -34,5 +37,13 @@ public class TotalComponent extends Component {
             priceCategories.put(priceType,priceValue);
         }
         return priceCategories;
+    }
+
+    public void agreeTOS(){
+
+        component.findElement(tosSel).click();
+    }
+    public void clickOnCheckoutBtn(){
+        component.findElement(checkoutBtnSel).click();
     }
 }

@@ -1,6 +1,5 @@
 package test.computer;
 
-import models.components.order.CheapComputerComponent;
 import models.components.order.StandardComputerComponent;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,6 +22,7 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
 
             orderComputerFlow.buildCompSpecAndAddToCart();
             orderComputerFlow.verifyShoppingCartPage();
+            orderComputerFlow.agreeTOSAndCheckout();
 
     }
     @DataProvider
