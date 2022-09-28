@@ -203,11 +203,12 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
 
         CheckOutPage checkOutPage = new CheckOutPage(driver);
 
-        ShippingMethodComponent shippingMethodComp = checkOutPage.shippingMethodComponent();
+        ShippingMethodComponent shippingMethodComp = checkOutPage.shippingMethodComponent()
+                ;
         shippingMethodComp.selectShippingMethod(randomShippingMethod).clickOnContinueButton();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(4000);
         }catch (Exception ignored){}
 
     }
