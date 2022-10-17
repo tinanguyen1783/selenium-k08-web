@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage extends Component {
 
-    WebDriver driver;
+    protected WebDriver driver;
+
 
     public BasePage(WebDriver driver) {
         super(driver, driver.findElement(By.tagName("html")));

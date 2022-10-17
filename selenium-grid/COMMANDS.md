@@ -1,3 +1,4 @@
+
 ## Command to start Hub
 ```
 java -jar selenium-server-4.5.0.jar hub
@@ -13,7 +14,7 @@ Note: IF you are on Windows OS, please remove part related to safari and add for
 ```
 java -jar -Dwebdriver.<type>.<name>s path/to/selenium/server.jar node --config /path/to/nodeConfig.json
 java -jar -Dwebdriver.gecko.driver=geckodriver -Dwebdriver.chrome.driver=chromedriver selenium-server-4.5.0.jar node --config node_config.json
-
+ java -jar selenium-server-4.5.0.jar node 
 ```
 
 NOTE: on Windows need to specify extension like gecko.exe, chrome.exe

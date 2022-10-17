@@ -24,7 +24,7 @@ public class FeatureProductTest {
     }
 
     private static void testFeatureProduct(WebDriver driver) {
-        driver.get(Urls.homePageUrl);
+        DriverFactory.getChromeDriver().get(Urls.homePageUrl);
         HomePage homePage = new HomePage(driver);
 
         List<ProductItemComponent> productItemComponentList = homePage.getProductGridComponent().getProductItemList();

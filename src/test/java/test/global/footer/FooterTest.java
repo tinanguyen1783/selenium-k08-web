@@ -1,6 +1,5 @@
 package test.global.footer;
 
-import driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,32 +13,27 @@ public class FooterTest extends BaseTest {
     // @Test(priority = 1, dependsOnMethods = {"testFooterCategoryPage"})
 
 
-    @Test
-    private static void testFooterCategoryPage() {
+    @Test()
 
+
+    private  void testFooterCategoryPage() {
+
+        WebDriver driver = getDriver();
         driver.get(Urls.homePageUrl);
+        Assert.fail("Demo taking screenshot when test is failed!");
         FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
         footerTestFlow.verifyProductCatFooterComponent();
 
 
-       /* String actualResult = "a", expectedResult = "b";
-        // Verifier.verifyEquals(actualResult,expectedResult);
-        // Hart assertion.
-
-        Assert.assertEquals(actualResult, expectedResult, "[ERR] Welcome message is incorrect jjjj");
-        System.out.println("Hello");
-        Assert.assertTrue(actualResult.equals(expectedResult), "....incorrect");
-        Assert.fail();
-        Assert.fail("...fail");
-*/
     }
 
-@Test
+@Test()
+
     public void testFooterHomePage() {
-    Assert.fail();
+        WebDriver driver = getDriver();
         driver.get(Urls.homePageUrl);
         FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
-        footerTestFlow.verifyProductCatFooterComponent();
+        footerTestFlow.verifyFooterComponent();
     }
 
 
