@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="selenium-k08-web" target="11" />
+      <module name="selenium-k08-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

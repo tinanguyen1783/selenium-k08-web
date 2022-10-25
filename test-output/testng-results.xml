@@ -1,318 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="19" passed="7" failed="3" skipped="5">
+<testng-results ignored="0" total="8" passed="0" failed="3" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-20T13:52:54 GMT-04:00" name="Regression" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1647">
+  <suite started-at="2022-10-20T14:01:31 GMT-04:00" name="Regression" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="363276">
     <groups>
-      <group name="smoke">
-        <method signature="DataProviderComputerData.testDataProvider(test_data.computer.ComputerData)[pri:0, instance:test.testng.DataProviderComputerData@f2eee60f]" name="testDataProvider" class="test.testng.DataProviderComputerData"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-10-20T13:52:54 GMT-04:00" name="Group 1" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="515">
-      <class name="test.testng.TestNGHook04">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeTest" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="beforeClass" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="beforeMethod" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testSth()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testSth" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSth -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterMethod" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterClass" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterTest" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.testng.TestNGHook04 -->
-      <class name="test.testng.TestNGHook02">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeTest" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeClass" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeMethod" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testSth()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="testSth" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSth -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="afterMethod" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="afterClass" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterTest" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.testng.TestNGHook02 -->
-    </test> <!-- Group 1 -->
-    <test started-at="2022-10-20T13:52:54 GMT-04:00" name="Group 3" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="548">
-      <class name="test.testng.TestNGHook04">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeSuite" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.testng.TestNGHook04@77394658]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterSuite" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- test.testng.TestNGHook04 -->
-      <class name="test.testng.TestNGHook03">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeSuite" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeTest" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="beforeClass" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="beforeMethod" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testSth()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testSth" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="29" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSth -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterMethod" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterClass" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:55 GMT-04:00" name="afterTest" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.testng.TestNGHook03@cf19ec9a]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterSuite" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- test.testng.TestNGHook03 -->
-      <class name="test.testng.TestNGHook02">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeSuite" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.testng.TestNGHook02@4248985d]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterSuite" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- test.testng.TestNGHook02 -->
-      <class name="test.testng.TestNGHook01">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeSuite" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterSuite" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- test.testng.TestNGHook01 -->
-      <class name="test.testng.DataProviderTest">
-        <test-method signature="testDataProvider(test.testng.DataProviderTest$User)[pri:0, instance:test.testng.DataProviderTest@ae2d7fe0]" started-at="2022-10-20T13:52:54 GMT-04:00" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="289" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User{name='Teo', age=18}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method signature="testDataProvider(test.testng.DataProviderTest$User)[pri:0, instance:test.testng.DataProviderTest@ae2d7fe0]" started-at="2022-10-20T13:52:54 GMT-04:00" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="25" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User{name='Ti', age=19}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method signature="testDataProvider(test.testng.DataProviderTest$User)[pri:0, instance:test.testng.DataProviderTest@ae2d7fe0]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="24" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User{name='Tun', age=20}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-      </class> <!-- test.testng.DataProviderTest -->
+    <test started-at="2022-10-20T14:01:31 GMT-04:00" name="Group 3" finished-at="2022-10-20T14:01:31 GMT-04:00" duration-ms="23">
     </test> <!-- Group 3 -->
-    <test started-at="2022-10-20T13:52:54 GMT-04:00" name="Group 4" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1647">
-      <class name="test.global.footer.FooterTest">
-        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@1a9a6799]" started-at="2022-10-20T13:52:56 GMT-04:00" name="testFooterCategoryPage" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="12" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.getDriver(BaseTest.java:30)
-at test.global.footer.FooterTest.testFooterCategoryPage(FooterTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:871)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterCategoryPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@1a9a6799]" started-at="2022-10-20T13:52:56 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFooterCategoryPage status=FAILURE method=FooterTest.testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@1a9a6799] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.captureScreenshot(BaseTest.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:871)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@1a9a6799]" started-at="2022-10-20T13:52:56 GMT-04:00" name="testFooterHomePage" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.captureScreenshot(BaseTest.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:871)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterHomePage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@1a9a6799]" started-at="2022-10-20T13:52:56 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshot -->
-      </class> <!-- test.global.footer.FooterTest -->
+    <test started-at="2022-10-20T14:01:31 GMT-04:00" name="Group 1" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="362909">
       <class name="test.computer.BuyingStandardComputerTest">
-        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:54 GMT-04:00" name="initBrowserSession" description="Init browser session" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:01:31 GMT-04:00" name="initBrowserSession" description="Init browser session" finished-at="2022-10-20T14:01:31 GMT-04:00" duration-ms="42" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -323,7 +20,7 @@ at java.base/java.lang.Thread.run(Thread.java:871)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserSession -->
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="896" status="FAIL">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:01:31 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:04:33 GMT-04:00" duration-ms="182318" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -363,11 +60,11 @@ at java.base/java.lang.Thread.run(Thread.java:871)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="57" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:04:33 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="180297" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -408,7 +105,7 @@ at java.base/java.lang.Thread.run(Thread.java:871)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:07:33 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -453,11 +150,11 @@ at java.base/java.lang.Thread.run(Thread.java:871)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:07:33 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:07:33 GMT-04:00" name="testStandardComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -502,33 +199,34 @@ at java.base/java.lang.Thread.run(Thread.java:871)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:07:33 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.computer.BuyingStandardComputerTest@63eac616]" started-at="2022-10-20T13:52:56 GMT-04:00" name="closeBrowserSession" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.computer.BuyingStandardComputerTest@a22c413e]" started-at="2022-10-20T14:07:33 GMT-04:00" name="closeBrowserSession" finished-at="2022-10-20T14:07:33 GMT-04:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSession -->
       </class> <!-- test.computer.BuyingStandardComputerTest -->
-      <class name="test.computer.BuyingCheapComputerTest">
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:54 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="238" status="FAIL">
+    </test> <!-- Group 1 -->
+    <test started-at="2022-10-20T14:01:31 GMT-04:00" name="Group 4" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="363204">
+      <class name="test.global.footer.FooterTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:01:31 GMT-04:00" name="initBrowserSession" description="Init browser session" finished-at="2022-10-20T14:01:31 GMT-04:00" duration-ms="42" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:01:31 GMT-04:00" name="testFooterCategoryPage" finished-at="2022-10-20T14:04:34 GMT-04:00" duration-ms="182996" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.getDriver(BaseTest.java:30)
-at test.computer.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+              <![CDATA[java.lang.NullPointerException
+at test.global.footer.FooterTest.testFooterCategoryPage(FooterTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -553,26 +251,22 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:871)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:54 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="4" status="FAIL">
+        </test-method> <!-- testFooterCategoryPage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:04:34 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="180063" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1] output={null}]]]>
+                <![CDATA[[TestResult name=testFooterCategoryPage status=FAILURE method=FooterTest.testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@b5b46c59] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.captureScreenshot(BaseTest.java:71)
+              <![CDATA[java.lang.NullPointerException
+at test.BaseTest.captureScreenshot(BaseTest.java:73)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -602,11 +296,157 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:871)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:07:34 GMT-04:00" name="testFooterHomePage" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at test.BaseTest.captureScreenshot(BaseTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:871)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterHomePage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:07:34 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.global.footer.FooterTest@b5b46c59]" started-at="2022-10-20T14:07:34 GMT-04:00" name="closeBrowserSession" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- test.global.footer.FooterTest -->
+    </test> <!-- Group 4 -->
+    <test started-at="2022-10-20T14:01:31 GMT-04:00" name="Group 2" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="363276">
+      <class name="test.computer.BuyingCheapComputerTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:01:31 GMT-04:00" name="initBrowserSession" description="Init browser session" finished-at="2022-10-20T14:01:31 GMT-04:00" duration-ms="42" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:01:31 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:04:34 GMT-04:00" duration-ms="183033" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at test.computer.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:871)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheapComputerBuying -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:04:34 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="180056" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at test.BaseTest.captureScreenshot(BaseTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:871)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:07:34 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -614,14 +454,10 @@ at java.base/java.lang.Thread.run(Thread.java:871)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.captureScreenshot(BaseTest.java:71)
+              <![CDATA[java.lang.NullPointerException
+at test.BaseTest.captureScreenshot(BaseTest.java:73)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -651,15 +487,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:871)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:55 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:07:34 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:55 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:07:34 GMT-04:00" name="testCheapComputerBuying" data-provider="computerData" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -667,14 +503,10 @@ at java.base/java.lang.Thread.run(Thread.java:871)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[nullis not supported]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: nullis not supported
-at driver.DriverFactory.getDriver(DriverFactory.java:50)
-at test.BaseTest.captureScreenshot(BaseTest.java:71)
+              <![CDATA[java.lang.NullPointerException
+at test.BaseTest.captureScreenshot(BaseTest.java:73)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -704,45 +536,19 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:871)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@fc3f00d1]" started-at="2022-10-20T13:52:55 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T13:52:55 GMT-04:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:07:34 GMT-04:00" name="captureScreenshot" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.computer.BuyingCheapComputerTest@e835c373]" started-at="2022-10-20T14:07:34 GMT-04:00" name="closeBrowserSession" finished-at="2022-10-20T14:07:34 GMT-04:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
       </class> <!-- test.computer.BuyingCheapComputerTest -->
-      <class name="test.testng.TestNGHook01">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:54 GMT-04:00" name="beforeTest" finished-at="2022-10-20T13:52:54 GMT-04:00" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="beforeClass" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="beforeMethod" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testSth()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="testSth" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSth -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterMethod" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterClass" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.testng.TestNGHook01@cc4159ee]" started-at="2022-10-20T13:52:56 GMT-04:00" name="afterTest" finished-at="2022-10-20T13:52:56 GMT-04:00" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.testng.TestNGHook01 -->
-    </test> <!-- Group 4 -->
+    </test> <!-- Group 2 -->
   </suite> <!-- Regression -->
 </testng-results>
